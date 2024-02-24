@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "utils.h": "c",
+        "geral.h": "c",
+        "frontend.h": "c",
+        "string.h": "c",
+        "stdio.h": "c",
+        "stat.h": "c",
+        "types.h": "c"
+    },
+    "cmake.configureOnOpen": false
+}

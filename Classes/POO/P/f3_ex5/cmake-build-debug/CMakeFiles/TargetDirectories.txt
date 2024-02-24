@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/cmake-build-debug/CMakeFiles/f3_ex5.dir
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+=======
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/cmake-build-debug/CMakeFiles/f3_ex5.dir
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+>>>>>>> main

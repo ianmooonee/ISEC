@@ -1,0 +1,19 @@
+.button{
+    -fx-font-size: 24;
+}
+
+#buttonOperator{
+    -fx-font-size: 24;
+    -fx-body-color: linear-gradient(from 0% 0% to 100% 100%,reflect,#ffa040,#a08040);
+}
+
+#display{
+    -fx-text-fill: #000000;
+    -fx-background-color: #ffe0a0;
+    -fx-font-family: 'Courier New';
+    -fx-font-size: 28;
+    -fx-font-weight: bold;
+    -fx-alignment: center-right;
+    -fx-border-color: #e0d090;
+    -fx-padding: 10;
+}

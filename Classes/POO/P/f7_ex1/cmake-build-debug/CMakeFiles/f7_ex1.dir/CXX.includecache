@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/POO/P/f7_ex1/Apartamento.cpp
+iostream
+-
+sstream
+-
+Apartamento.h
+C:/Users/ianmoone/Desktop/POO/P/f7_ex1/Apartamento.h
+
+C:/Users/ianmoone/Desktop/POO/P/f7_ex1/Apartamento.h
+Imovel.h
+C:/Users/ianmoone/Desktop/POO/P/f7_ex1/Imovel.h
+
+C:/Users/ianmoone/Desktop/POO/P/f7_ex1/Imovel.h
+string
+-
+

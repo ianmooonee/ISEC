@@ -1,0 +1,59 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "exame_1920_normal",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "exame_1920_normal::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-exame_1920_normal-Debug-84a89d355cd5031c5f33.json",
+					"name" : "exame_1920_normal",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/Exames/exame_1920_normal/cmake-build-debug",
+		"source" : "C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/Exames/exame_1920_normal"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 2
+	}
+}

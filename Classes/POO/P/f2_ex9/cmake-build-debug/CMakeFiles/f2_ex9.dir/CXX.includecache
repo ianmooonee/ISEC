@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ianmoone/Desktop/POO/P/f2_ex9/main.cpp
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+

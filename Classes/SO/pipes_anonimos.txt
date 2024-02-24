@@ -1,0 +1,23 @@
+0 - stdin
+1 - stdout
+2 - stderr
+3 - FD[0]
+4 - FD[1]
+5 - FD_FP[0]
+6 - FD_FP[1]
+
+2 pipes, um do pai para o filho e um do filho para o pai por esta ordem.
+
+pai:
+char str[100];
+clsoe(FD[0]);
+int size=write(FD[1], "Ola", 4);
+close(FD_FP[1]);
+read(FD_FP[0], str, sizeof(str));
+
+filho:
+char str[100];
+close(FD[1]);
+int size=read(FD[0], str, sizeof(str));
+close(FD_FP[0]);
+write(FD_FP[1], "recebi", 7);

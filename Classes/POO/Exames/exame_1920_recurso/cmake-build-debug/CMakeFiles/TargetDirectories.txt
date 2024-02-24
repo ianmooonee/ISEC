@@ -1,0 +1,3 @@
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/Exames/exame_1920_recurso/cmake-build-debug/CMakeFiles/exame_1920_recurso.dir
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/Exames/exame_1920_recurso/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/Exames/exame_1920_recurso/cmake-build-debug/CMakeFiles/rebuild_cache.dir

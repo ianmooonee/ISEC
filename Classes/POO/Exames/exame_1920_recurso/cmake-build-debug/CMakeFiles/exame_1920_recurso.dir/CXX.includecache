@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/Exames/exame_1920_recurso/main.cpp
+iostream
+-
+string
+-
+vector
+-
+sstream
+-
+

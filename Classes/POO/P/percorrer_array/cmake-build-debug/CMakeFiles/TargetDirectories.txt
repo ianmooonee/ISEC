@@ -1,0 +1,3 @@
+C:/Users/ianmoone/Desktop/POO/P/percorrer_array/cmake-build-debug/CMakeFiles/percorrer_array.dir
+C:/Users/ianmoone/Desktop/POO/P/percorrer_array/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/POO/P/percorrer_array/cmake-build-debug/CMakeFiles/rebuild_cache.dir

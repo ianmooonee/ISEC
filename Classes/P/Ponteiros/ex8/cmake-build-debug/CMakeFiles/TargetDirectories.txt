@@ -1,0 +1,3 @@
+C:/Users/ianmoone/Desktop/P23/Ponteiros/ex8/cmake-build-debug/CMakeFiles/ex8.dir
+C:/Users/ianmoone/Desktop/P23/Ponteiros/ex8/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/P23/Ponteiros/ex8/cmake-build-debug/CMakeFiles/rebuild_cache.dir

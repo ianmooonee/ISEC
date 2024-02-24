@@ -1,0 +1,83 @@
+<<<<<<< HEAD
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/aviso.cpp
+aviso.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/aviso.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/aviso.h
+prego.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/prego.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/main.cpp
+prego.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/prego.h
+aviso.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/aviso.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/prego.cpp
+prego.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/prego.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex5/prego.h
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+cmath
+-
+
+=======
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/aviso.cpp
+aviso.h
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/aviso.h
+
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/aviso.h
+prego.h
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/prego.h
+
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/main.cpp
+prego.h
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/prego.h
+aviso.h
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/aviso.h
+
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/prego.cpp
+prego.h
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/prego.h
+
+C:/Users/ianmoone/Desktop/Isec21.22/aulas/POO/P/f3_ex5/prego.h
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+cmath
+-
+
+>>>>>>> main

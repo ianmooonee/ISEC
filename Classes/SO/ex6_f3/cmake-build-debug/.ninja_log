@@ -1,0 +1,7 @@
+# ninja log v5
+44	72	1666821593701171433	ex6_f3	cffc16932a5f3704
+0	43	1666821593673176356	CMakeFiles/ex6_f3.dir/main.c.o	ceb2b3cb494ef18e
+0	40	1666823312056583033	CMakeFiles/ex6_f3.dir/main2.c.o	e972d4afe43a1d6c
+0	46	1666823312060586533	CMakeFiles/ex6_f3.dir/main.c.o	ceb2b3cb494ef18e
+1	54	1666823312068593533	CMakeFiles/ex6_f3.dir/pai.c.o	68d637cf934dda05
+1	45	1666823355503843388	CMakeFiles/ex6_f3.dir/pai.c.o	68d637cf934dda05

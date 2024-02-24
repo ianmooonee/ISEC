@@ -1,0 +1,3 @@
+C:\Users\ianmoone\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\212.5457.51\bin\cmake\win\bin\cmake.exe -E rm -f CMakeFiles\exame_1920_recurso.dir/objects.a
+C:\MinGW\bin\ar.exe cr CMakeFiles\exame_1920_recurso.dir/objects.a @CMakeFiles\exame_1920_recurso.dir\objects1.rsp
+C:\MinGW\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\exame_1920_recurso.dir/objects.a -Wl,--no-whole-archive -o exame_1920_recurso.exe -Wl,--out-implib,libexame_1920_recurso.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\exame_1920_recurso.dir\linklibs.rsp

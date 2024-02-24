@@ -1,0 +1,20 @@
+exame 1920 normal - ex.8
+
+plantacao:
+vector<planta*> plantas;
+vector<planta*> getVizinhas(Planta &centro, int raio);
+void mandaCrescer();
+~Plantacao();
+
+planta:
+int max_altura;
+int altura;
+virtual void cresce(Plantacao &p);
+
+hospedeira:
+int distancia;
+void cresce(Plantacao &p);
+
+parasita:
+Planta *hosp;
+void cresce(Plantacao &p);

@@ -1,0 +1,36 @@
+vetor<int> conjunto; //não ocupa espaço, é inicializado todo vazio
+cout<<conjunto.size()<<endl; //é imprimido "0"
+
+vetor<int> conj({1,2,3,4,5}); //conj começa com 4 inteiros guardados (initializer list)
+cout<<conj[1]<<endl; //elemento da 2 posição, imprime "2";
+cout<<conj[30]<<endl; //nem sempre dá erro, usar conj.at(pos_que_queremos) que é a forma mais segura (avisa em caso de erro)
+
+for(int i=0; i<conj.size();i++{ //for(auto el:conj) - range based for loop. tipo auto declara a variavel el sozinho. damos cout<<el<<" ";
+	cout<<conj.at(i)<<" ";
+}
+
+conj.push_back(13); //acrescenta no fim do vetor, fica 1,2,3,4,5,13
+
+int calcula(initializer_list<int> conj){
+	int soma=0;
+	for(auto var:conj){
+		soma+=var;
+	}
+	return soma;
+}
+
+for(auto ptr=conj.begin(); ptr!=conj.end();ptr++){ //percorre o vetor
+
+}
+
+for(auto ptr=conj.begin(); ptr!=conj.end();){ //melhor versão para percorrer vetores
+	if(*prt%2==0){ //elimina os pares
+		ptr=conj.erase(ptr);
+	}
+	else{ //caso não seja par incrementa
+		ptr++;
+	}
+}
+
+auto prox=conj.erase(2+conj.begin()); //elimina a posição 2 do vetor. o vetor adapta-se, eliminando o espaço em branco
+cout<<prox<<endl; //imprime o 5

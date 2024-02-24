@@ -1,0 +1,6 @@
+Pessoa: nif(unsigned long), cc(unsigned long), nome(string), morada(string).
+Conta: saldo(float), titular(Pessoa &p), id(int).
+Banco: nome(string), morada(string), contas(vector<Conta>).
+
+Relação entre conta e pessoa (titular) é uma agregação.
+Relação entre conta e banco é de composição.

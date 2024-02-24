@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="POO_tp_m1"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="POO_tp_m1">
+				<Option output="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/POO_tp_m1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 POO_tp_m1"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="POO_tp_m1/fast">
+				<Option output="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/POO_tp_m1.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/mingw32"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include/c++/backward"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../include"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/include-fixed"/>
+					<Add directory="c:\mingw\bin\../lib/gcc/mingw32/6.3.0/../../../../mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 POO_tp_m1/fast"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/MinGW/bin/mingw32-make.exe -f &quot;C:/Users/ianmoone/Desktop/Poo-tp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Bateria.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Bateria.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/CentralEletrica.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/CentralEletrica.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Controlador.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Controlador.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Deserto.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Deserto.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Edificio.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Edificio.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Floresta.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Floresta.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Fundicao.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Fundicao.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Ilha.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Ilha.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Lenhador.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Lenhador.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/MinaCarvao.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/MinaCarvao.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/MinaFerro.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/MinaFerro.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Mineiro.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Mineiro.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Montanha.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Montanha.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Operario.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Operario.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Pantano.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Pantano.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Pastagem.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Pastagem.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Serracao.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Serracao.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Trabalhador.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Trabalhador.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Zona.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/Zona.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/main.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/utils.cpp">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/utils.h">
+			<Option target="POO_tp_m1"/>
+		</Unit>
+		<Unit filename="C:/Users/ianmoone/Desktop/Poo-tp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

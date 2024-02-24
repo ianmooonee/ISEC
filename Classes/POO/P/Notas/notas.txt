@@ -1,0 +1,49 @@
+class Aluno{
+
+	~Aluno(){ //destrutor, o this é opcional
+		cout<<"Destruindo aluno <<this->getAsString()<<endl;
+	}
+
+	Aluno(string nome="Anonimo"){
+		this->nome=nome;
+		bool presencas[N];
+		static int contador; //atributo static é partilhado por todos os objetos da classe
+		this->naluno=contador++;
+		cout<<"A construir aluno..."<<endl;
+	}
+	
+	static int getContador(){
+		return contador; //apenas retorna o valor do contador, ou seja, a quantidade de objetos criados
+	}
+}
+
+void teste(Aluno &a){ //se tirarmos a & estamos a copiar o objeto b nesta função, tornando-se lento
+	cout<<"Dentro da função"<<endl;
+}
+
+int Aluno::contador=1; //parecido com variavel global. Inicializado fora da classe. É a quantidade de objetos gerados.
+int main(){
+	cout<<Aluno::getContador()<<endl; //já existe mesmo antes da criação do objeto
+	Aluno a("Jose");
+	Aluno b;
+	//Aluno alunos[5]; //array de alunos com o nome Anonimo
+	//Aluno alunos[5]={"Ze", "Joao", "Pedro", "Ana"}; //o ultimo fica com o nome anonimo
+	a.getContador();
+	teste(b);
+}
+
+
+ex7:
+	MSG a{'a'}, b;
+	cout<<a.getAsString()<<endl;
+	cout<<b.getAsString()<<endl;
+	//imprimir mensagens do construtor e destrutor
+	
+	MSG &c=b;
+	cout<<c.getAsString<<endl;
+	//a referencia nao cria nem apaga objetos
+	
+	MSG d=b; //construcao por copia nao invoca construtor MSG(char c...)
+	
+	f)o construtor por omissao se nao existir nao permite criar objetos sem especificacao de parametros ou um array de objetos sem inicializacao
+	so e possivel atraves do construtor por defeito ou pelo que tem 1 argumento

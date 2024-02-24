@@ -1,0 +1,3 @@
+C:/Users/ianmoone/Desktop/Isec/aulas/POO/P/f2_caderno/cmake-build-debug/CMakeFiles/f2_caderno.dir
+C:/Users/ianmoone/Desktop/Isec/aulas/POO/P/f2_caderno/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/Isec/aulas/POO/P/f2_caderno/cmake-build-debug/CMakeFiles/rebuild_cache.dir

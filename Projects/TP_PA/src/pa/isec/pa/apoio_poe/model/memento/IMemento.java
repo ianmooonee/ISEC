@@ -1,0 +1,5 @@
+package pa.isec.pa.apoio_poe.model.memento;
+
+public interface IMemento {
+    default Object getSnapshot(){return null;}
+}

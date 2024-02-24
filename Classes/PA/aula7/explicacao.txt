@@ -1,0 +1,10 @@
+            public interface ILibrary
+			|
+			|
+			|
+			|
+		     Library
+			|
+			|
+			|
+       Library     LibrarySet	  LibraryMap

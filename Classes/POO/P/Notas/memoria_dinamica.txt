@@ -1,0 +1,28 @@
+//int *p=new int;
+/*
+ * cout<<*p2;
+ * delete p2;
+ *
+ * com classes:
+ * Trabalhado *t=new Trabalhador([parametros do construtor]);
+ * delete t; //dar sempre delete no fim do programa
+ *
+ * arrays:
+ * int n=10;
+ * const int *tabela=new int[n];
+ * tabela[0]=2;
+ * delete []tabela;
+ *
+ * matrizes:
+ * const int **tabela2=new int*[nlinhas];
+ * for(int i=0; i<nlinhas; i++){
+ *      tabela2[i]= new int[ncolunas];
+ * }
+ *
+ * for(int i=0; i<nlinhas; i++){
+ *      delete []tabela2[i];
+ * }
+ * delete []tabela2;
+ *
+ * Os deletes normalmente fazem-se nos destrutores das classes.
+*/

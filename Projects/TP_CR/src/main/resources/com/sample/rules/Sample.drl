@@ -1,0 +1,174 @@
+package com.sample.rules
+import com.sample.Divisao
+import com.sample.Pessoa
+import com.sample.Camara
+import com.sample.SensorVolumetrico
+import com.sample.Alarme
+import com.sample.Cartao
+
+//alarme
+rule "Desliga alarme"
+salience 1
+	when
+		$d:Divisao(autoridadeNotificada==true, portaTrancada==true)
+		$a:Alarme()
+	then
+		$d.setAutoridadeNotificada(false);
+		$d.setPortaTrancada(false);
+		update($d);
+		System.out.println("Alarme desligado após autoridade notificada.");
+end
+
+//intruso
+rule "Deteção de movimento numa divisão fechada"
+salience 99
+	when
+		$d:Divisao()
+		$s:SensorVolumetrico(divisao==$d, ativo==true, detecaoMovimento==true)
+		$p:Pessoa(divisao==$d, nivelAcesso==-1, localizacao.equals("Interior"))
+	then
+		System.out.println("Sensor detetou movimento na/no "+$d.getNome()+".");
+		$s.setDetecaoMovimento(true);
+		update($s);
+end
+
+rule "Deteção de movimento numa divisão com sensor Volumetrico ativo"
+salience 100
+	when
+		$d:Divisao()
+		$s:SensorVolumetrico(divisao==$d, ativo==true, detecaoMovimento==true)
+		$p:Pessoa(divisao==$d)
+	then
+		System.out.println("Alarme ligado, intruso no/na " + $d.getNome() + ".");
+		$d.setAutoridadeNotificada(true);
+		$d.setPortaTrancada(true);
+		update($d);
+		$s.setDetecaoMovimento(false);
+		update($s);
+		insert(new Alarme());
+end
+
+rule "Deteção de movimento humano pela câmara das traseiras"
+salience 98
+	when
+		$d:Divisao()
+		$p:Pessoa(divisao==$d)
+		$c:Camara(divisao==$d, detecaoHumana==true, zonaActividade.equals("Janela Traseiras"), zonaActividade.equals($p.getLocalizacao()))
+	then
+		System.out.println($p.getNome() + " junto à " + $c.getZonaActividade() + ".");
+end
+
+//falso intruso
+rule "Deteção de movimento não humano pela câmara das traseiras"
+salience 20
+	when
+		$d:Divisao()
+		$p:Pessoa(divisao==$d)
+		$c:Camara(divisao==$d, detecaoHumana==false, zonaActividade.equals("Janela Traseiras"), zonaActividade.equals($p.getLocalizacao()))
+	then
+		System.out.println("Movimentação não humana (" +$p.getNome()+ ") junto à " + $c.getZonaActividade() + "." + " ");
+end
+
+//normal
+rule "Acesso não autorizado"
+salience 21
+	when
+		$d:Divisao()
+		$p:Pessoa(divisao==$d, nivelAcesso>0, nivelAcesso<$d.getNivelSeguranca())
+	then
+		$d.setTentativasAcesso($d.getTentativasAcesso()+1);
+		update($d);
+		System.out.println("Acesso não autorizado ao "+$d.getNome()+". Captura de imagem realizada pela câmara, para futura análise.");
+end
+
+rule "Tentativa de acesso por intruso"
+salience 22
+	when
+		$d:Divisao()
+		$p:Pessoa(divisao==$d, nivelAcesso<0)
+		$c:Camara(divisao==$d, detecaoHumana==true, zonaActividade.equals("Porta"), zonaActividade.equals($p.getLocalizacao()));
+	then
+		System.out.println("Intruso tentou aceder à/ao "+$d.getNome()+".");
+end
+
+rule "Acesso não autorizado por cartão inválido"
+salience 18
+	when
+		$d:Divisao()
+		$p:Pessoa(divisao==$d, nivelAcesso>0, nivelAcesso>=$d.getNivelSeguranca())
+		$ca:Cartao(portador==$p, valido==false)
+	then
+		$d.setTentativasAcesso($d.getTentativasAcesso()+1);
+		update($d);
+		System.out.println("Acesso não autorizado ao "+$d.getNome()+" devido ao cartão estar inválido. Notificação enviada ao funcionário/a "+$p.getNome()+".");
+end
+
+rule "Acesso não autorizado por porta trancada"
+salience 19
+	when
+		$d:Divisao(portaTrancada==true)
+		$p:Pessoa(divisao==$d, nivelAcesso>0, nivelAcesso>=$d.getNivelSeguranca())
+		$ca:Cartao(portador==$p, valido==true)
+	then
+		System.out.println("Acesso não autorizado ao "+$d.getNome()+" devido a porta trancada.");
+end
+
+rule "Acesso autorizado com cartão válido"
+salience 3
+	when
+		$d:Divisao(portaTrancada==false)
+		$p:Pessoa(divisao==$d, nivelAcesso>=$d.getNivelSeguranca())
+		$ca:Cartao(portador==$p, valido==true)
+	then
+		$d.setQuantidadePessoas($d.getQuantidadePessoas()+1);
+		update($d);
+		$p.setLocalizacao("Interior");
+		update($p);
+		System.out.println($p.getNome()+" entrou na " +$d.getNome()+ " com cartão válido.");
+end
+
+rule "Sair de divisão"
+salience 2
+	when
+		$d:Divisao()
+		$p:Pessoa(divisao==$d, nivelAcesso>=$d.getNivelSeguranca(), localizacao.equals("Interior"))
+	then
+		$d.setQuantidadePessoas($d.getQuantidadePessoas()-1);
+		update($d);
+		$p.setLocalizacao("Porta");
+		update($p);
+		System.out.println($p.getNome()+" saiu da/do " +$d.getNome()+ ".");
+end
+
+//verificações
+rule "Frequencia excessiva no acesso a uma porta"
+salience 21
+	when
+		$d:Divisao(tentativasAcesso>=3)
+	then
+		$d.setTentativasAcesso(0);
+		update($d);
+		System.out.println("Comportamento suspetito registado na/no "+$d.getNome()+". Captura de imagem realizada pela câmara, para futura análise.");
+end
+
+rule "Ligar sensor se a divisão estiver vazia"
+salience 101
+	when
+		$d:Divisao(quantidadePessoas==0)
+		$s:SensorVolumetrico(divisao==$d)
+	then
+		$s.setAtivo(true);
+		update($s);
+		System.out.println("Sensor ligado na divisão "+$d.getNome()+".");
+end
+
+rule "Desligar sensor se a divisão não estiver vazia"
+salience 49
+	when
+		$d:Divisao(quantidadePessoas>0)
+		$s:SensorVolumetrico(divisao==$d, ativo==true)
+	then
+		$s.setAtivo(false);
+		update($s);
+		System.out.println("Sensor desligado na divisão "+$d.getNome()+".");
+end

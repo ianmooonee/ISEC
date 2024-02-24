@@ -1,0 +1,3 @@
+C:/Users/ianmoone/Desktop/POO/P/ex_aula_ficheiros/cmake-build-debug/CMakeFiles/f3_ex7.dir
+C:/Users/ianmoone/Desktop/POO/P/ex_aula_ficheiros/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/ianmoone/Desktop/POO/P/ex_aula_ficheiros/cmake-build-debug/CMakeFiles/rebuild_cache.dir

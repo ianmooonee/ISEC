@@ -1,0 +1,85 @@
+#include <iostream>
+#include <string>
+#include "aluno.h"
+#include "aluno.h" //não deve ser um problema, pois o .h está protegido contra dupla inclusão
+#include "Exame.h"
+#include <fstream>
+#include <sstream>
+using namespace std;
+
+
+
+int main() {
+    /*cout << Aluno::getContador(); //mostra 0 objetos criados até ao momento
+    Aluno b;
+    string nome="joao";
+    Aluno a("Jose");
+    Aluno alunos[5]={nome};
+    cout << Aluno::getContador(); //mostra 7 objetos criados até ao momento
+    cout << b.getContador(); //a função além de pertencer à classe por ser estática também
+                            //é possível de chamar por um objeto
+
+    cout<<a.getAsString()<<endl;
+
+    for(auto el: alunos){ //também é possível o range-based loop em arrays de tamanho fixo
+        cout<<el.getAsString()<<endl;
+    }
+
+    Aluno c("Ana", {false, true, false}); //devido ao initializer list
+    cout << "Logo no início ===" << c.getAsString();
+    c.eliminaPresencaoNoDadoDia(1);
+    cout << "Depois do eliminaPresenca ===" << c.getAsString(); //Aluno fica com tres faltas
+    cin.get();
+    c.eliminaFaltas(); //fica sem qualquer registo
+    cout << "Depois do eliminaFaltas ===" << c.getAsString();
+    cin.get();*/
+    //Aula de 12/11/2021 - E se os exames estiverem num vector?
+    vector<Exame *> exames={new Exame("Exame de POO - Normal", 2, 2, 2022)};
+    //Exame e1("Exame de POO - Normal", 2, 2, 2022);
+    //Aluno a1("Ana", &e1);
+    //Aluno a2("Pedro", &e1);
+    Aluno a1("Ana", exames[0]);
+    Aluno a2("Pedro", exames[0]);
+    Aluno a3(a1);
+    cout << a1.getAsString() << endl << a2.getAsString() << endl;
+    //e1.setTitulo("Exame POO - Recurso");
+    exames[0]->setTitulo("Exame POO - Recurso");
+    cin.get();
+    cout << a1.getAsString() << endl << a2.getAsString() << endl;
+
+    //Ler alunos de ficheiro
+    ifstream ficheiro("../alunos.txt");
+    vector<Aluno> alunos;
+    if(ficheiro) {
+        string nome, linha;
+        unsigned long nif;
+        while (getline(ficheiro, linha)) {
+            istringstream buffer(linha);
+            if (buffer >> nif && getline(buffer, nome))
+                //alunos.push_back(Aluno(&e1, nome, nif));
+                alunos.push_back(Aluno(exames[0], nome, nif));
+        }
+        //E se agora acrescentarmos um novo exame ao vector? Não deveria afetar
+        // os alunos que estão
+        //a apontar para o exame que já existe? Por que então dá erro na listagem a seguir?
+        exames.push_back(new Exame("Exame Especial de POO", 9, 9, 2022));
+
+        cout << "\n--------Lidos do ficheiro:------------------------\n";
+        for (auto el: alunos)
+            cout << el.getAsString() << endl;
+        //Note that any open file is automatically closed when the ifstream object is destroyed.
+        //Acrescentar mais uma aluno no vector
+        //alunos.push_back(Aluno(&e1, "Pedro Gomes", 987654321));
+        //alunos.push_back(Aluno(&exames[0], "Pedro Gomes", 987654321));
+        //Gravar alunos no vector em ficheiro
+        ofstream ficheiro_saida("../log_alunos.txt"); //Na diretoria acima
+        if (ficheiro_saida)
+            for (auto el: alunos)
+                ficheiro_saida << el.getNif() << " " << el.getNome() << endl;
+    }
+    for(auto el: exames)
+        delete el;
+    return 0;
+}
+
+//Ilha mapa=[3][3]

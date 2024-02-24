@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/f3_ex1.dir/main.cpp.o CMakeFiles/f3_ex1.dir/ponto.cpp.o -o f3_ex1 

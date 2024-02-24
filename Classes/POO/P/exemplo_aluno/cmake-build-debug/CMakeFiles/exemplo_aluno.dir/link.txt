@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/exemplo_aluno.dir/aluno.cpp.o CMakeFiles/exemplo_aluno.dir/data.cpp.o CMakeFiles/exemplo_aluno.dir/main.cpp.o -o exemplo_aluno 

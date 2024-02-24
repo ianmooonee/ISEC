@@ -1,0 +1,23 @@
+1- who | wc -l
+2- who | cut -d " " -f1 | sort -u | wc -l
+3- who | cut -d " " -f1 |grep ^ianmoone$ | wc -l
+4- ls -l ~ | grep ^[d-] | wc -l
+5- ls -l etc/bin | cut -d " " -f1 | grep x | wc -l -> fazer cut porque o grep procura na linha toda
+6- ls -l /dev | grep ^[bc] | wc -l
+7- ls /dev | grep ^sd | cut -c 1-3 | sort -u | wc -l
+8- ls /etc | grep gnome | wc -l OU ls -l | tr -s " " | cut -d " " -f9 | grep gnome | wc -l
+9- ls -l /etc | cut -d " " -f1 | grep ^-rw-r----- | wc -l > ~/ficheiro.txt
+10- echo -f "exemplo\netc" > ~/ficheiro.txt
+11- chmod 640 ~/ficheiro.txt -> r-4, w-2, x-1
+12- ls -la ~ | tr -s " " | cut -d " " -f9 | grep ^.p | wc -l
+13- ls -l /usr/bin | tr -s " " | cut -d " " -f5 | sort -n -r | head -n 7 -> os 7 primeiros e com -7 é todos mas sem os 7 primeiros -> para tamanho, não comprimento do nome
+14- ls /home | grep ^[aeiou]
+16- cat /etc/passwd | cut -d ":" -f 1,3
+17- cat /etc/passwd | cut -d ":" -f 1,3 | tr -s ":" " " | sort
+18- cat /etc/passwd | cut -d ":" -f 1,3 | tr -s ":" " " | sort -n
+22- ls -l /usr/sbin / /usr/bin | cut -d " " -f1 | grep s | sort | grep ^[-dcbspl] | wc -l OU ls -l /usr/sbin / /usr/bin | cut -d " " -f1 | grep s | sort | head -n -2 | wc -l
+25- ls ~ | sort | head -n 4 | tail -n 3
+26- ls -l /usr/bin | tr -s " " | cut -d " " -f 1,5 | head -n 15 | tail -n 5 | cut -d " " -f2
+
+cat /etc/passwd | cut -d ":" -f 1,3 | tr -s ":" " " | sort -n -k 2 -r | head -2
+who | tr -s " " | cut -d " " -f 1,3 -> tirar os espaços e cortar a coluna 1 e 3

@@ -1,0 +1,111 @@
+package com.sample.rules
+import com.sample.Paciente;
+import com.sample.Sintoma;
+import com.sample.Diagnostico;
+import java.util.Scanner;
+  
+rule "Exantema 1"
+salience 100
+	when
+		$s1:Sintoma(sintoma=="febre")
+		$s2:Sintoma(sintoma=="manchas")
+		$s3:Sintoma(sintoma=="dores")
+		$p:Paciente(id==$s1.getIdPaciente(), id==$s2.getIdPaciente(), id==$s3.getIdPaciente(), idade>=15)
+	then
+		insert(new Diagnostico($p.getId(), $p.getNome(), "Exantema 1"));
+		retract($p);
+end
+
+rule "Exantema 2"
+salience 90
+	when
+		$s1:Sintoma(sintoma=="febre")
+		$s2:Sintoma(sintoma=="manchas")
+		$p:Paciente(id==$s1.getIdPaciente(), id==$s2.getIdPaciente(), idade<15)
+	then
+		insert(new Diagnostico($p.getId(), $p.getNome(), "Exantema 2"));
+		retract($p);
+end
+
+rule "Gripe"
+salience 80
+	when
+		$s1:Sintoma(sintoma=="febre")
+		$s2:Sintoma(sintoma=="dores")
+		$p:Paciente(id==$s1.getIdPaciente(), id==$s2.getIdPaciente())
+	then
+		insert(new Diagnostico($p.getId(), $p.getNome(), "Gripe"));
+		retract($p);
+end
+
+rule "Resfriado"
+salience 70
+	when
+		$s1:Sintoma(sintoma=="febre")
+		$p:Paciente(id==$s1.getIdPaciente())
+	then
+		insert(new Diagnostico($p.getId(), $p.getNome(), "Resfriado"));
+		retract($p);
+end
+
+rule "Com sintomas mas não correspondem a nenhum diagnóstico"
+salience 10
+	when
+		$p1:Paciente()
+	then
+		insert(new Diagnostico($p1.getId(), $p1.getNome(), "Com sintomas, mas não correspondem a nenhum diagnóstico"));
+		retract ($p1)
+end
+
+rule "Sem sintomas"
+salience 11
+	when
+		$p:Paciente()
+		forall($s:Sintoma(idPaciente!=$p.getId()))
+	then
+		insert(new Diagnostico($p.getId(), $p.getNome(), "Sem sintomas"));
+		retract($p);
+end
+
+rule "Imprimir"
+salience 0
+	when
+		$d:Diagnostico()
+	then
+		System.out.println("Paciente com id "+$d.getIdPaciente()+" "+$d.getNomePaciente()+" com diagnostico: "+$d.getDesignacao()+".");
+end
+
+rule "Entrada de Dados"
+salience 110
+when
+then	
+	Scanner input1 = new Scanner(System.in);
+	Scanner input2 = new Scanner(System.in);
+	String r1 ;
+	
+	System.out.println("Nome do Paciente ?");
+	String Nome = input1.nextLine();
+	System.out.println("Idade ?");
+	
+	
+	int Idade = input2.nextInt();
+	insert (new Paciente("001", Nome, Idade));
+	
+	System.out.println("Tem dores ?");
+	r1 = input1.nextLine();
+	if (r1.equals("S")) {
+		insert (new Sintoma("001","dores"));
+	}
+	
+	System.out.println("Tem manchas ?");
+	r1 = input1.nextLine();
+	if (r1.equals("S")) {
+		insert (new Sintoma("001","manchas"));
+	}
+	
+	System.out.println("Tem febre ?");
+	r1 = input1.nextLine();
+	if (r1.equals("S")) {
+		insert (new Sintoma("001","febre"));
+	}
+end

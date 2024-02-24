@@ -1,0 +1,47 @@
+ex5:
+procurar classes e as suas relações, atributos, parâmetros e métodos.
+
+Aquario(const Aquario &a)=delete; -> proibir a cópia
+
+Classes(nomes):
+	Tarifário (assossiado a um cartão)
+	Cartão
+	Rede (conjunto de cartões e tarifários)
+	Tagatrla (derivada de tarifário - herança)
+	Fala pouco (derivada de tarifário - herança)
+	Rede é composta por cartões e tarifários
+	Tarifário tem uma agregação de cartões
+	
+	
+Cartão:
+	unsigned long numero;
+	float saldo;
+	Tarifário *tf; //é ponteiro por ser uma relação de agregação
+	public:
+	bool autoriza(); //função que verifica se o saldo é suficiente para a chamada
+	float regista(int duracao); //função que invoca o calculaCusto do tarifário para apresentar o custo da chamada
+	float carrega(float car); //invoca a função carrega do tarifário para calcular o valor a carregar para cada tarifário
+	
+Rede:
+	vector<Cartão> cartoes;
+	vector<Tarifário*> tfs; //é ponteiro porque tarifário é uma classe abstrata
+	bool insere(Cartao &novo); //acrescenta um cartão à rede
+	string getAsString(); //para listar
+	bool remover(unsigned long num); //para remover um cartão pelo número
+	regista(unsigned long num, int duracao);
+	carregar(unsigned long num, float quant);
+
+Tarifário:
+	int custo;
+	public:
+	bool autiriza(float s)=0; //função para verificar se pode fazer uma chamada
+	float calculaCusto(int duracao)=0; //função para calcular o valor da chamada
+	float carrega(float carregamento)=0; //função que calcula o valor a carrega no cartão
+	
+	
+TRABALHO POO:
+virtual transforma_recruso -> função diferente para cada um dos edifícios, cada um é responsável pela alteração de recursos.
+para mudar os trabalhadores basta por um ponteiro a apontar para ele, dar delete do ponteiro do vector e por o ponteiro novo no outro vector.
+
+ -Não tem memória dinâmica ou acesso a um ponteiro.
+ construtor por cópia, destrutor e operador=

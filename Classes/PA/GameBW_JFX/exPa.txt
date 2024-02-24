@@ -1,0 +1,4 @@
+começar pelo enum
+mudar funções no stateAdapter se for preciso
+mudar o fluxo de estados
+mudar root pane para adicionar UI ao stackPane

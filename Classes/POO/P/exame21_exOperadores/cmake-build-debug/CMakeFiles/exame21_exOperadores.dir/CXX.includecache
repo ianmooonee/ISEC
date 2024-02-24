@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/POO/P/exame21_exOperadores/Texto.cpp
+Texto.h
+C:/Users/ianmoone/Desktop/POO/P/exame21_exOperadores/Texto.h
+
+C:/Users/ianmoone/Desktop/POO/P/exame21_exOperadores/Texto.h
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+cmath
+-
+fstream
+-
+
+C:/Users/ianmoone/Desktop/POO/P/exame21_exOperadores/main.cpp
+Texto.h
+C:/Users/ianmoone/Desktop/POO/P/exame21_exOperadores/Texto.h
+

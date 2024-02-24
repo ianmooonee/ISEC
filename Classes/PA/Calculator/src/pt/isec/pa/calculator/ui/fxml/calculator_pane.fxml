@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import java.net.URL?>
+<!--fx:controller="pt.isec.pa.calculator.ui.CalculatorPane"-->
+
+<VBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+
+      prefHeight="400.0" prefWidth="600.0"
+      fx:id="root" spacing="10">
+
+    <padding><Insets top="10" bottom="10" left="10" right="10"/></padding>
+
+    <Label text="0.0" fx:id="lbDisplay" prefHeight="1000" prefWidth="1000" id="display"/>
+
+    <HBox>
+        <Button text="AC" prefHeight="1000" prefWidth="1000"/>
+        <Button text="\%" prefHeight="1000" prefWidth="1000"/>
+        <Button text="+/-" prefHeight="1000" prefWidth="1000"/>
+        <Button text="/" prefHeight="1000" prefWidth="1000" id="buttonOperator"/>
+    </HBox>
+
+    <HBox>
+        <Button text="7" prefHeight="1000" prefWidth="1000"/>
+        <Button text="8" prefHeight="1000" prefWidth="1000"/>
+        <Button text="9" prefHeight="1000" prefWidth="1000"/>
+        <Button text="*" prefHeight="1000" prefWidth="1000" id="buttonOperator"/>
+    </HBox>
+
+    <HBox>
+        <Button text="4" prefHeight="1000" prefWidth="1000"/>
+        <Button text="5" prefHeight="1000" prefWidth="1000"/>
+        <Button text="6" prefHeight="1000" prefWidth="1000"/>
+        <Button text="-" prefHeight="1000" prefWidth="1000" id="buttonOperator"/>
+    </HBox>
+
+    <HBox>
+        <Button text="1" prefHeight="1000" prefWidth="1000"/>
+        <Button text="2" prefHeight="1000" prefWidth="1000"/>
+        <Button text="3" prefHeight="1000" prefWidth="1000"/>
+        <Button text="+" prefHeight="1000" prefWidth="1000" id="buttonOperator"/>
+    </HBox>
+
+    <HBox>
+        <Button text="Pi" prefHeight="1000" prefWidth="1000"/>
+        <Button text="0" prefHeight="1000" prefWidth="1000"/>
+        <Button text="." prefHeight="1000" prefWidth="1000"/>
+        <Button text="=" prefHeight="1000" prefWidth="1000"/>
+    </HBox>
+
+    <stylesheets>
+       <URL value="@styles.css"/>
+   </stylesheets>
+
+</VBox>

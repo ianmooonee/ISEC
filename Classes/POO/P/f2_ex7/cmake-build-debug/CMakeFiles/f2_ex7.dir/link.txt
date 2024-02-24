@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/f2_ex7.dir/main.cpp.o -o f2_ex7 

@@ -1,0 +1,3 @@
+/Users/ianmoone/Desktop/P23/Matrizes/ex22/cmake-build-debug/CMakeFiles/ex22.dir
+/Users/ianmoone/Desktop/P23/Matrizes/ex22/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ianmoone/Desktop/P23/Matrizes/ex22/cmake-build-debug/CMakeFiles/rebuild_cache.dir

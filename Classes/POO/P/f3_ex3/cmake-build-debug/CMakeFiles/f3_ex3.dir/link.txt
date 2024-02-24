@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/f3_ex3.dir/main.cpp.o CMakeFiles/f3_ex3.dir/ponto.cpp.o CMakeFiles/f3_ex3.dir/retangulo.cpp.o CMakeFiles/f3_ex3.dir/desenho.cpp.o -o f3_ex3 

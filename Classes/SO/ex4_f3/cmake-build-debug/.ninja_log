@@ -1,0 +1,10 @@
+# ninja log v5
+0	37	1666220474008912464	CMakeFiles/ficha.dir/main.c.o	53a252da53860e61
+38	65	1666220474036912601	ficha	29d9dda1a3434c3d
+0	45	1666221430281587444	CMakeFiles/ficha.dir/main.c.o	53a252da53860e61
+1	45	1666221430281587444	CMakeFiles/ficha.dir/ing.c.o	3be4c005257edb7c
+0	45	1666221430281587444	CMakeFiles/ficha.dir/port.c.o	85586ed81a64bcbb
+1	41	1666221829355538417	CMakeFiles/ficha.dir/main.c.o	53a252da53860e61
+0	38	1666222091472819843	CMakeFiles/ficha.dir/main.c.o	53a252da53860e61
+1	38	1666222091472819843	CMakeFiles/ficha.dir/ing.c.o	3be4c005257edb7c
+1	39	1666222091472819843	CMakeFiles/ficha.dir/port.c.o	85586ed81a64bcbb

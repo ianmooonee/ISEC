@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/clube.cpp
+clube.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/clube.h
+pessoa.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/pessoa.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/clube.h
+pessoa.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/pessoa.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/main.cpp
+iostream
+-
+pessoa.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/pessoa.h
+clube.h
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/clube.h
+
+C:/Users/ianmoone/Desktop/POO/P/f3_ex6/pessoa.h
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+cmath
+-
+

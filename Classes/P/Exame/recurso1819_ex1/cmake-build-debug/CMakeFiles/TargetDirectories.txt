@@ -1,0 +1,3 @@
+/Users/ianmoone/Desktop/P23/Exame/recurso1819_ex1/cmake-build-debug/CMakeFiles/recurso1819_ex1.dir
+/Users/ianmoone/Desktop/P23/Exame/recurso1819_ex1/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/ianmoone/Desktop/P23/Exame/recurso1819_ex1/cmake-build-debug/CMakeFiles/rebuild_cache.dir

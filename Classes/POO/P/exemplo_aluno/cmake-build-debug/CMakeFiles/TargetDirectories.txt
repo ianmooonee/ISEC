@@ -1,0 +1,3 @@
+/home/ianmoone/Desktop/POO/P/exemplo_aluno/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ianmoone/Desktop/POO/P/exemplo_aluno/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ianmoone/Desktop/POO/P/exemplo_aluno/cmake-build-debug/CMakeFiles/exemplo_aluno.dir

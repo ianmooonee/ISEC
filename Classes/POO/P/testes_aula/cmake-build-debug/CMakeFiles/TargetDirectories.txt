@@ -1,0 +1,3 @@
+/home/ianmoone/Desktop/POO/P/testes_aula/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ianmoone/Desktop/POO/P/testes_aula/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/ianmoone/Desktop/POO/P/testes_aula/cmake-build-debug/CMakeFiles/testes_aula.dir

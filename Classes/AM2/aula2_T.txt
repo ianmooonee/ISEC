@@ -1,0 +1,71 @@
+--Equações diferenciais--
+
+DF01: EQ é um equiação de derivadas
+DF02: ED -> f(x, y, y', y'', ..0, y^n.)=0    F: D contido R^n+2 ---> R    	(1)
+	    y^n=f(x, y, y', y'', ..., y^(n-1))    			  	(2)	
+
+--Solução/Integral geral--
+(1) --> G(x, y; c1, c2, ... cn)=0 , c1, c2, ..., cn pertence R			(3)
+(2) --> y=G(x; c1, c2, ... cn)=0 , c1, c2, ..., cn pertence R			(4)
+
+--Caracterização de uma ED--
+Tipo: EDO - equações difereniais ordinarias -> apenas de uma variável independente, y(x)=?
+      EDP - equações com derivadas parciais -> mais que uma variável, y(x, t)=?
+
+Ordem: é dada pela derivada de maior ordem que consta na ED
+
+Linearidade 
+
+
+
+--Exercício 01--
+Considere a ED y'=1.
+
+(a) Caracterize a ED.
+	y(x)=? -> é uma EDO de 1ª ordem.
+
+(b) Determine a solução geral.
+	Qual a função cuja derivada é 1? -> é y(x)=x <=> y=x+c, c pertence R 	(solução geral)
+	(x+c)'= x'+c' = 1 -> confirmação
+
+(c) Represente graficamente o gráfico da ED e o da sua solução geral.
+	wolfram alpha
+
+|  x |  y |  y'=f(x,y)
+-----------------------
+|  0 |  0 |    1
+|  1 |  1 |    1
+| -1 | -1 |    1
+
+
+
+Teste 3 EDO 15/16
+2- a)
+	Passo 1:
+		Graficamente a figura 1 encaixa totalmente na figura 2, pelo que a afirmação poderá ser verdasdeira.
+		y=ce^(-x^2), c pertence R -> y'-2xy=0      ???
+	
+	Passo 2:
+		calcular y':
+		y´=ce^(-x^2)=-2ce^(-x^2)x
+
+		substituir na equação do passo 1
+		-2ce^(-x^2)x+2x(ce^(-x^2))=0 <=> 0=0 -> proposição verdadeira		
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

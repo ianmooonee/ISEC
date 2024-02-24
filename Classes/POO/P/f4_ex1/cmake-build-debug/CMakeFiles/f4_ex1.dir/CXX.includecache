@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/ianmoone/Desktop/POO/P/f4_ex1/Fracao.cpp
+Fracao.h
+C:/Users/ianmoone/Desktop/POO/P/f4_ex1/Fracao.h
+
+C:/Users/ianmoone/Desktop/POO/P/f4_ex1/Fracao.h
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+cmath
+-
+fstream
+-
+

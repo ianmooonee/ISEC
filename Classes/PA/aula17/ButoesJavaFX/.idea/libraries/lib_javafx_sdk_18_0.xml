@@ -1,0 +1,22 @@
+<component name="libraryTable">
+  <library name="lib-javafx-sdk-18.0">
+    <CLASSES>
+      <root url="file://$USER_HOME$/javafx-sdk-18.0.1/lib" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="file://$PROJECT_DIR$/lib/javafx.base" />
+      <root url="file://$PROJECT_DIR$/lib/javafx.controls" />
+      <root url="file://$PROJECT_DIR$/lib/javafx.fxml" />
+      <root url="file://$PROJECT_DIR$/lib/javafx.graphics" />
+      <root url="file://$PROJECT_DIR$/lib/javafx.media" />
+      <root url="file://$PROJECT_DIR$/lib/javafx.swing" />
+      <root url="file://$PROJECT_DIR$/lib/javafx.web" />
+      <root url="file://$PROJECT_DIR$/lib/javafx-18.0.1-javadoc" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="file://$USER_HOME$/javafx-sdk-18.0.1" />
+    </SOURCES>
+    <jarDirectory url="file://$USER_HOME$/javafx-sdk-18.0.1/lib" recursive="false" />
+    <jarDirectory url="file://$USER_HOME$/javafx-sdk-18.0.1" recursive="false" type="SOURCES" />
+  </library>
+</component>

@@ -1,0 +1,24 @@
+cont miner
+cont oper
+cont len
+cons minaferro 2 2
+cons minaferro 0 0
+cons minaferro 1 1 3
+cont miner
+
+asd tt 1
+1 dd t2
+cont asd
+cont 1
+cons min 1 2
+cons mina 13 13
+cons minaferro 9 8
+cons minaferro 1 1 3
+cons minaferro 0 0
+cons minaferro 1 2
+cons central 2 1
+cons bateria 0 1
+cons fundicao 0 2
+
+vende
+list

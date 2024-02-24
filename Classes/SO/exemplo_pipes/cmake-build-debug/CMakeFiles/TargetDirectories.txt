@@ -1,0 +1,3 @@
+/home/ianmoone/Desktop/SO/exemplo_pipes/cmake-build-debug/CMakeFiles/exemplo_pipes.dir
+/home/ianmoone/Desktop/SO/exemplo_pipes/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/ianmoone/Desktop/SO/exemplo_pipes/cmake-build-debug/CMakeFiles/rebuild_cache.dir

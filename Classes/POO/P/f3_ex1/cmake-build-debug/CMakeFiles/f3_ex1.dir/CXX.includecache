@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ianmoone/Desktop/POO/P/f3_ex1/main.cpp
+ponto.h
+/home/ianmoone/Desktop/POO/P/f3_ex1/ponto.h
+
+/home/ianmoone/Desktop/POO/P/f3_ex1/ponto.h
+iostream
+-
+string
+-
+sstream
+-
+initializer_list
+-
+vector
+-
+math.h
+-
+
